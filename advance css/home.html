@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            top: 0;
+            width: 100%;
+            background-color: #252839;
+            animation: changebackground 4s infinite linear;
+        }
+
+        @keyframes changebackground {
+            0% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            49% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            50% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            99% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            100% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+        }
+
+        #d1 {
+            background-image: linear-gradient(rgb(219, 150, 162), rgb(202, 110, 202));
+            height: 50px;
+            width: 100%;
+            box-shadow: 0px -5px 8px 3px #beb9a4;
+        }
+
+        #d1 img {
+            padding: 13px;
+            height: 28px;
+            width: 105px;
+            animation: logo 9s infinite linear alternate;
+        }
+
+        @keyframes logo {
+            0% {
+                padding: 13px
+            }
+
+            100% {
+                padding-left: 1130px;
+            }
+        }
+
+        #d1 input[type="text"] {
+            float: right;
+            padding: 7px;
+            font-size: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        #d2 {
+
+            background-color: rgb(124, 117, 117);
+            height: 45px;
+            width: 100%;
+            padding-top: 5px;
+            box-shadow: 0px 5px 8px 3px #beb9a4;
+
+        }
+
+        #d2 a {
+            color: #000000;
+            position: relative;
+            text-decoration: none;
+            font-size: 30px;
+            Z-index: 0;
+            margin-left: 15px;
+
+
+        }
+
+        #d2 a::before {
+            content: '';
+            inset: 0;
+            background: #D55650;
+            position: absolute;
+            transform: scaleX(0);
+    
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+
+        }
+
+        #d2 a:hover::before {
+            transform: scaleX(1);
+        
+            background: #000000;
+        }
+
+        #d2 a:hover {
+            color: #ffffff;
+        }
+
+        #img  {
+            margin-top: -400px;
+            margin-left: 550px;
+            width: 578px;
+            height: 380px;
+            margin-bottom: 60px;
+        }
+
+        .logoimg {
+            height: 25px;
+            width: 25px;
+            margin-left: 8px;
+            padding-top: 3px;
+            animation: spin 2s infinite linear;
+            box-shadow: 2px 2px 2px 2px rgb(160, 151, 151);
+        }
+
+        @keyframes spin {
+            35% {
+                transform: rotate(360deg);
+            }
+
+            50% {
+                transform: rotate(340deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #footer {
+
+            margin-left: 48%;
+
+        }
+
+        #footerheading {
+
+            margin-left: 37px;
+        }
+
+        #color {
+            background-color: rgb(205, 217, 228);
+margin-top: -50px;
+        }
+
+        .title-word {
+            animation: color-animation 3s linear infinite;
+        }
+
+        .title-word-1 {
+            --color-1: #DF8453;
+            --color-2: #453f96;
+            --color-3: #E4A9A8;
+
+        }
+
+        .title-word-2 {
+            --color-1: #DBAD4A;
+            --color-2: #ACCFCB;
+            --color-3: #17494D;
+        }
+
+        .title-word-3 {
+            --color-1: #cbd49f;
+            --color-2: #d4ba9f;
+            --color-3: #9fd4b1;
+        }
+
+        .title-word-4 {
+            --color-1: #ACCFCB;
+            --color-2: #E4A9A8;
+            --color-3: #ACCFCB;
+        }
+
+        .title-word-5 {
+
+            --color-1: #453f96;
+            --color-2: #DF8453;
+            --color-3: #E4A9A8;
+        }
+
+        @keyframes color-animation {
+            0% {
+
+                color: var(--color-1)
+            }
+
+            32% {
+
+                color: var(--color-1)
+            }
+
+            33% {
+
+                color: var(--color-2)
+            }
+
+            65% {
+                color: var(--color-2)
+            }
+
+            66% {
+                color: var(--color-3)
+            }
+
+            99% {
+                color: var(--color-3)
+            }
+
+            100% {
+                color: var(--color-1)
+            }
+        }
+
+
+
+
+        .title {
+
+            font-weight: 600;
+            font-size: 60px;
+            height: 330px;
+            width: 300px;
+            padding-left: 40px;
+            ;
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div id="d1">
+            <img src="elevatee.png" height="45px" width="300px">
+
+        </div>
+        <div id="d2">
+            <a href="home.html"> Home</a>
+            <a href="login.html"> Login</a>
+            <a href="aditi.html"> About</a>
+            <a href="" id="active"> Portfolio</a>
+            <a href="help.html"> Help</a>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="title">
+            <span class="title-word title-word-1">WELCOME</span>
+            <span class="title-word title-word-2">AND</span>
+            <span class="title-word title-word-3">EXPLORE</span>
+            <span class="title-word title-word-4">YOUR</span>
+            <span class="title-word title-word-5">POTENTIAL</span>
+        </h2>
+    </div>
+    
+        <img src="EXPLORE.png" alt="image not found" id="img">
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div id="color">
+        <div id="footer">
+            <h3 id="footerheading">join us</h3>
+            <div>
+                <img src="insta logo.png" alt="" class="logoimg">
+                <img src="twitter logo.png" alt="" class="logoimg">
+                <img src="fb logo.png" alt="" class="logoimg">
+                <img src="linkedin logo.png" alt="" class="logoimg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

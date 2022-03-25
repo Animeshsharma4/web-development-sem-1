@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>punjab voting portal</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            
+
+            background: url(pexels-studio-art-smile-3476860.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        #logo {
+            height: 41px;
+            width: 40px;
+            margin: 21px 28px;
+        }
+
+
+        #heading {
+            top;
+            display: flex;
+            background: rgba(23, 240, 218, 0.35);
+            height: 62px;
+            justify-items: center;
+            align-items: center;
+            bac display: flex;
+        }
+
+        #headinglist {
+
+
+            list-style: none;
+            display: flex;
+            margin-left: 116px;
+
+        }
+
+        #headinglist li a {
+            color: yellowgreen;
+            padding: 2px 13px;
+            margin-left: 70px;
+            border: 2px dotted rgb(133, 169, 175);
+            border-radius: 3px;
+            background-color: rgb(236, 222, 222);
+
+
+        }
+
+        #headingbutton {
+            margin-left: 199px;
+
+
+
+
+        }
+
+        #declaration {
+            /* border-radius: 5px; */
+            background-color: rgba(207, 183, 191, 0.78);
+            color: rgb(44 74 113);
+            border: 2px double gray;
+            margin-top: 46px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-left: 16px;
+            padding-right: 16px;
+            /* padding-top: 5px; */
+            padding-bottom: 5px;
+            margin-bottom: 44px
+        }
+
+        #proceed {
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        #proceedbtn {
+            padding: 7px;
+            color: rgb(226, 208, 217);
+            background-color: rgba(52, 97, 26, 0.4);
+        }
+        #declarationcheckbox{
+            margin-left: 397px;
+        }
+        #mainbox{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(63, 36, 36,0.4);
+        }
+        #headinglist li a:hover{
+    background-color:rgba(23, 240, 218, 0.35);
+    color:black;
+}
+    
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <img src="android-chrome-512x512.png" alt="logo" id="logo">
+        <ul id="headinglist">
+            <li><a href="home.html" id="home">HOME</a></li>
+            <LI><a href="FEEDBACK.HTML">FEEDBACK</a></LI>
+            <LI><a href="help.html">HELP</a></LI>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div id="headingbutton">
+            <button>contact us</button>
+            <button>email</button>
+        </div>
+
+    </div>
+    <div id="mainbox">
+        <p id="declaration">
+
+            I am a responsible person of the country i am here to give vote to my favoured candidate.I declare myself fully responsible in this voting process and if found guilty can be punished
+            <br><br><br>
+        
+            <input type="checkbox" id="declarationcheckbox" name='declaration' required >
+            <label for="checkbox">i accept all <a href="#declaration">terms and condition</a></label>
+        
+        </p>
+    </div>
+    <div id="proceed"><a href="cast.html" target="_blank"><button id="proceedbtn">proceed</button></a></div>
+
+</body>
+
+</html>

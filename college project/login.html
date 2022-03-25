@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-voting portal</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+                body {
+            background: url(pexels-studio-art-smile-3476860.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        #logo {
+            height: 41px;
+            width: 40px;
+            margin: 21px 28px;
+        }
+
+
+        #heading {
+            display: flex;
+            background: rgba(23, 240, 218, 0.35);
+            height: 62px;
+            justify-items: center;
+            align-items: center;
+            bac display: flex;
+        }
+
+        #headinglist {
+
+
+            list-style: none;
+            display: flex;
+            margin-left: 125px;
+
+        }
+
+        #headinglist li a {
+            color: yellowgreen;
+            padding: 2px 13px;
+            margin-left: 70px;
+            border: 2px dotted rgb(133, 169, 175);
+            border-radius: 3px;
+            background-color: rgb(236, 222, 222);
+
+
+        }
+
+        #headingbutton {
+            margin-left: 199px;
+
+
+
+
+        }
+        #login{height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(63, 36, 36,0.4);
+            animation:slider 1s infinite linear;
+        }
+        #loginform{
+            background-color: rgba(197, 180, 149,0.6);
+            border: 4px solid white;
+        }
+#loginitems{
+    margin: 85px 22px;
+}
+.loginlabel{
+    color: rgb(24, 34, 3);
+    margin-right: 12px;
+}
+#loginbtn{
+margin: 0px 96px;
+}
+input{
+    border: 2px solid rgb(188, 218, 219);
+}
+input:hover{
+    border: 2px solid greenyellow;
+    background-color: khaki;
+}
+#headinglist li a:hover{
+    background-color:rgba(23, 240, 218, 0.35);
+    color:black;
+}
+   
+input{ 
+    width: 170px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <img src="android-chrome-512x512.png" alt="logo" id="logo">
+        <ul id="headinglist">
+            <li class="navtools"><a href="home.html" id="home" >HOME</a></li>
+            <LI><a href="FEEDBACK.HTML" >FEEDBACK</a></LI>
+            <LI><a href="help.html">HELP</a></LI>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div id="headingbutton">
+            <button>contact us</button>
+            <button>email</button>
+        </div>
+
+    </div>
+    <div id="login">
+        <form action="" id="loginform">
+            <div id="loginitems">
+            <label for="username" class="loginlabel">*USERNAME:</label>
+            <input type="text" id="username" placeholder="please enter your username"  name="username" required><br><br><br>
+            <label for="passward" class="loginlabel">*PASSWARD:</label>
+            <input type="password" id="passward" placeholder="please enter your passward" name='passward' required><br><br><br>
+            <button id="loginbtn"><a href="declaration.html">login-voting</a></button>
+        </div>
+        </form>
+        
+    </div>
+</body>
+</html>

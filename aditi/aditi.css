@@ -1,0 +1,35 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+.heading{
+    background: linear-gradient(to top, #00ffff 0%, #333399  100%);
+}
+
+.headbar {
+    background: linear-gradient(to bottom, #0033cc 0%, #3399ff 100%);
+    
+}
+a:hover{
+	background-color:black;
+}
+.headbar a{
+    color:antiquewhite;
+    line-height:35px;
+    margin-left: 239px;
+    margin-right: 300px;
+}
+
+main{
+	color: black;
+	height:auto;
+	text-align:center;
+	margin-left:400px;
+	margin-right:400px;
+	margin-bottom:400px;
+	display:inline-block;
+    font-size: 25px;
+    background: linear-gradient(to bottom left, #00ccff 0%, #ffffff 75%);
+}

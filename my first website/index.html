@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first website</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .navigation{
+            color: rgb(21, 19, 22);
+    
+         
+        }
+        body{
+            background: url(nature-6844982.jpg) no-repeat center center/cover ;
+        }
+        body{
+       
+            
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo 2', cursive;;
+        }
+        .leftnavigation{
+            display: inline-block;
+            border: 2px transparent greenyellow;
+            width: 150px;
+            margin: 34px;
+            padding: 16px;
+            margin-bottom: 11px
+
+
+        }
+        .midnavigation{
+            display:block;
+            border: 2px transparent rgb(247, 249, 250);
+            width: 423px;
+            margin: -91px auto;
+            
+            padding: 10px;
+        }
+        .rightnavigation{
+            display: inline-block;
+            position: absolute;
+            border: 2px transparent rgb(252, 253, 252);
+            width: 182px;
+            top: 0px;
+            right: -30px;
+            margin: 34px;
+            padding: 21px;
+        }
+        .navlist li a{         
+            color: rgb(158, 233, 20);
+            text-decoration: none;
+            padding: 11px;
+            font-size: 18px;
+            font-size: 20px;
+        }
+        .navlist li{
+            display: inline-block;
+            text-decoration: none;
+        }
+        .navlist{
+            font-family: 'Baloo 2', cursive;            
+            display: inline-block;
+        }
+        .navlist li a:hover,.navlist li a:active{
+            color: rgb(172, 118, 145);
+            text-decoration: underline;
+            padding: 11px;
+            font-size: 18px;
+        }
+        .leftnavigation img{
+            display: inline-block;
+            text-align: center;
+            width: 58px;
+            margin-right: 10px;
+        }    
+        .leftnavigation img{
+            text-align: center;
+        }
+        .button{
+            font-family: 'Baloo 2', cursive;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .button:hover,.button:active{
+            background-color: gray;
+
+        }
+        .button:visited{
+            background-color: rgb(247, 17, 17);
+        }
+        #brandname{
+            line-height: 4px;
+            font-size: 18px;
+        }
+        .form{
+            font-family: 'Baloo 2', cursive; 
+            border:2px transparent rgb(201, 243, 123);
+            background: transparent;
+            
+            width: 550px;
+            margin: 150px 70px;
+        }
+        .formkeys input{
+            display: block;
+            font-family: 'Baloo 2', cursive; 
+            margin: 6px auto;
+            padding: 10px;
+            width: 270px;
+            font-size: 17px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        .formtext{
+            text-align: center;
+            font-size: 29px;
+        }
+        .formbutton{
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 80px;
+        }
+        .formbutton:hover{
+            background-color: rgb(247, 136, 136);
+            
+        }
+        .forminput:checked{
+            background-color: cadetblue;
+
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<body>
+    <header class="navigation">
+        <div class="leftnavigation">
+            <img src="chitkara.png" alt="cant load image" id="image1">
+            <div id="brandname">chitkara university</div>
+         
+            
+        </div>
+        <div class="midnavigation">
+            <ul class="navlist">
+                <li><a href="">home</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">contact us</a></li>
+                <li><a href="">fitness</a></li>
+                
+            </ul>
+            
+
+        </div>
+        <div class="rightnavigation">
+            <button class="button" id="call button">call us now</button>
+            <button class="button" id="email button">email us</button>
+        </div>
+
+    </header>
+    <div class="form">
+        <div class="formtext">fill the form please!!</div>
+        <div class="formkeys">
+            <input class="forminput" type="text" name="" placeholder="please enter your name">
+        </div>
+        <div class="formkeys">
+            <input type="" name="" placeholder="please enter your mobile number">
+        </div>
+        <div class="formkeys">
+            <input type="email" name="" placeholder="please enter your email id">
+        </div>
+        <div class="formkeys">
+            <input type="text" name="" placeholder="please enter your city name">
+        </div> 
+        <div>
+            <button class="formbutton">submit</button>
+            
+            
+        </div> 
+
+    </div>
+
+
+</body>
+</html>

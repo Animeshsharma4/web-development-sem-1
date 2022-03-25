@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        table td {
+            padding-left: 30px;
+        }
+
+        tr {
+            border-bottom: 2px solid springgreen;
+        }
+
+        #head {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(218, 195, 166, 0.7); */
+            height: 80px;
+            animation: hidelogo 2s infinite linear;
+        }
+
+        @keyframes hidelogo {
+            0% {
+                background-image: linear-gradient(#e58c8a, #eec0c6);
+
+            }
+
+            100% {
+                background-image: linear-gradient(#7ee8fa, #eec0c6);
+
+            }
+        }
+
+        #tablediv {
+            margin-top: -29px;
+            background-color: rgb(216, 191, 216, 0.6);
+            border-bottom: 2px solid turquoise;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+
+        #frequent {
+            height: 40px;
+            background-color: rgb(216, 191, 216, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+
+        .tableimg {
+            height: 40px;
+            width: 40px;
+            padding-top: 30px;
+            padding-bottom: -30px;
+        }
+
+        .tablename {
+            margin-top: -2px;
+        }
+
+        #checktext {
+            color: rgb(226, 94, 94);
+            background-color: rgb(155, 211, 212, 0.4);
+            display: inline;
+            margin-left: 90px;
+
+        }
+
+        #textarea {
+            background-color: rgba(219, 177, 146, 0.4);
+            margin-top: 10px;
+        }
+
+        #textdiv {
+
+            margin-left: 4%;
+        }
+
+
+
+        body {
+            top: 0;
+            width: 100%;
+            font-family: 'Lobster', cursive;
+            background-color: #252839;
+            animation: changebackground 4s infinite linear;
+        }
+
+        @keyframes changebackground {
+            0% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            49% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            50% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            99% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            100% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+        }
+
+        #d1 {
+            background-color: rgb(193, 210, 224);
+            height: 80px;
+            width: 100%;
+            
+
+        }
+
+        #d1 img {
+            padding: 20px;
+        }
+
+
+        #d2 {
+            background-color: rgb(231, 228, 228);
+            height: 80px;
+            width: 100%;
+
+        }
+
+        #d2 a {
+
+            color: black;
+            text-decoration: none;
+            font-size: 22px;
+            padding: 28px;
+            float: left;
+        }
+
+        #d2 a:hover {
+            background-color: #ddd;
+            font-size: 20px;
+        }
+
+        #d2 a#active {
+            background-color: #2196F3;
+            color: white
+        }
+
+        /* #logo {
+            height: 41px;
+            width: 80px;
+            margin: 21px 28px;
+        }
+
+
+        #heading {
+
+            display: flex;
+            background: rgba(23, 240, 218, 0.35);
+            height: 62px;
+            justify-items: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #headinglist {
+
+
+            list-style: none;
+            display: flex;
+            margin-left: 116px;
+
+        }
+
+        #headinglist li a {
+            color: yellowgreen;
+            padding: 2px 13px;
+            margin-left: 40px;
+            border: 2px dotted rgb(133, 169, 175);
+            border-radius: 3px;
+            background-color: rgb(236, 222, 222);
+
+
+        }
+
+        #headinglist li a:hover {
+            background-color: aquamarine;
+            color: black;
+        }
+
+        #headingbutton {
+            margin-left: 199px;
+
+        } */
+
+        #submitbtn {
+            margin-left: 8%;
+        }
+
+        .footer img:hover {
+
+            height: 30px;
+            width: 30px;
+        }
+
+        /* .logoimg {
+            height: 25px;
+            width: 25px;
+            padding-left: 5px;
+        }
+
+        #footer {
+
+            margin-left: 48%;
+            margin-top: -10px;
+        }
+
+        #footerheading {
+            margin-bottom: -1px;
+            margin-left: 37px;
+        }
+
+        #color {
+            background-color: rgb(205, 217, 228);
+            margin-top: -20px;
+            margin-left: -8px;
+        } */
+        .header{
+            margin-top: -10px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div id="d1">
+            <img src="elevatee.png" height="45px" width="300px">
+        </div>
+        <div id="d2">
+            <a href="home.html"> Home</a>
+            <a href="login.html"> Login</a>
+            <a href="aditi.html"> About</a>
+            <a href=""> Portfolio</a>
+            <a href="help.html" id="active"> Help</a>
+
+        </div>
+    </div>
+    <!-- 
+    <div id="heading">
+        <img src="elevate.jpeg" alt="logo" id="logo">
+        <ul id="headinglist">
+            <li><a href="home.html" id="home">HOME</a></li>
+            <LI><a href="profile.html">PORTFOLIO</a></LI>
+            <LI><a href="login.html">GET IN TOUCH</a></LI>
+            <li><a href="aditi.html">ABOUT US</a></li>
+        </ul>
+        <div id="headingbutton">
+            <button>contact us</button>
+            <button>email</button>
+        </div>
+    </div> -->
+    <div id="animatelogo">
+        <div id="head">
+            <h1 id="">HELP
+
+
+            </h1>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h4 id="frequent">Frequently Asked Questions(FAQ'S)</h4>
+
+    </div>
+    <div id="tablediv">
+        <table>
+            <tr>
+                <td><img src="unnamed (1).jpg" alt="**" class="tableimg"><br>
+                    <p class="tablename">Nitesh</p>
+                </td>
+                <td>how to add link <br><br> you can add link after login with add link tag</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td><img src="unnamed.jpg" alt="**" class="tableimg"><br>
+                    <p class="tablename">Joseph</p>
+                </td>
+                <td>how to login? <br><br> if you already have an account otherwise you need to sign up</td>
+            </tr>
+            <tr>
+                <td><img src="unnamed (2).jpg" alt="**" class="tableimg"><br>
+                    <p class="tablename">Ritish</p>
+                </td>
+                <td>what we can actually show ? <br><br>you can share your links with your skills which other can see
+                </td>
+            </tr>
+            <tr>
+                <td><img src="unnamed (3).jpg" alt="**" class="tableimg"><br>
+                    <p class="tablename">Anjel</p>
+                </td>
+                <td>how to contact us? <br><br>you can contact us by clicking on contact us or email icon to contact us
+                </td>
+            </tr>
+            <tr>
+                <td><img src="unnamed (4).jpg" alt="**" class="tableimg"><br>
+                    <p>Bhavesh</p>
+                </td>
+                <td> how to logout?<br><br>you can logout using logout button present in your feed window </td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="textdiv">
+        <h4 id="checktext">Any Other Questions</h4><br>
+        <textarea name="" id="textarea" cols="40" rows="7"></textarea><br>
+        <input type="button" value="post your query" id="submitbtn"><br><br>
+
+        <h3>or <a href="aditi.html">contact us</a> </h3>
+    </div>
+    <div class="footer" style="background-color: rgb(231, 228, 228); height:75px;width: 100%; text-align:center;">
+        <p style="font-size: 20px;"> Join with us:</p>
+        <a href="#"> <img src="fb logo.png" height="25px" width="25px" style="padding-left: 2px;"></a>
+        <a href="#"> <img src="insta logo.png" height="25px" width="25px" style="padding-left: 2px;"></a>
+        <a href="#"> <img src="twitter logo.png" height="25px" width="25px" style="padding-left: 2px;"></a>
+        <a href="#"><img src="linkedin logo.png" height="25px" width="25px" style="padding-left: 2px;"></a>
+    </div>
+    <!-- <div id="color">
+        <div id="footer">
+            <h2 id="footerheading">join us</h2>
+            <div>
+                <img src="insta logo.png" alt="" class="logoimg">
+                <img src="twitter logo.png" alt="" class="logoimg">
+                <img src="fb logo.png" alt="" class="logoimg">
+                <img src="linkedin logo.png" alt="" class="logoimg">
+            </div>
+        </div>
+    </div> -->
+
+
+
+</body>
+
+</html>

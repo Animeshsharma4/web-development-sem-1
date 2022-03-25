@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @import url("https: // fonts . googleapis . com/css2? family=Montserrat&display=swap") ;
+    <title></title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-color: #F8F2F2;
+        }
+
+        a {
+            color: #000000;
+            position: relative;
+            text-decoration: none;
+            font-size: 50px;
+            Z-index: 0;
+        }
+
+        a::before {
+            content: '';
+            inset: 0;
+            background: #D55650;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out;
+            z-index: -1;
+
+        }
+
+        a:hover::before {
+            transform: scaleX(1);
+            transforM-origin: left;
+            background: #000000;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Hover Me</a>
+</body>
+
+</html>

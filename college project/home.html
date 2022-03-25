@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-voting portal</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <STyle>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(pexels-studio-art-smile-3476860.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+        
+        #heading {
+            
+            display: flex;
+            background-color: #e9afb6;;
+            height: 62px;
+            justify-items: center;
+            align-items: center;
+            display: flex;
+        }
+        #homenav li{
+            display: inline-block;
+
+        }
+        #homenav li a{
+            color: yellowgreen;
+            padding: 2px 13px;
+            margin-left: 17px;
+            border: 2px dotted rgb(175, 169, 133);
+            border-radius: 3px;
+            background-color: rgb(236, 222, 222);
+
+        
+        }
+        #homenav li a:hover{
+            background-color: rgb(202, 162, 162);
+            color: #8F0;
+            border-color: rgb(220, 241, 122);
+        }
+        #homenav{
+            margin-left: 770px;
+        }
+        #votingcount{
+            background: url(general-elections-2019-e_660_041819094401.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 450px;
+        }
+table{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+table th, table td{
+padding: 20px;
+padding-right: 50px;
+font-size: 24px;
+color: rgb(5, 53, 102);
+text-shadow: 2px 2px rgb(194, 142, 142);
+}
+#innerdiv{
+    height:450px;
+    background-color:rgba(207, 206, 148, 0.6);
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes changecolor{
+    0%{background-color:rgba(207, 206, 148, 0.6) ;}
+    25%{background-color: rgba(240, 167, 140,0.6);}
+    50%{background-color: rgba(253, 167, 224, 0.6);}
+    75%{background-color: rgba(162, 243, 243,0.6);}
+}
+#lastdiv{
+    color: rgb(10, 247, 223);
+    margin-left: 540px;
+}
+#lastdiv input{
+    margin-left: 47px;
+    background-color: rgba(16, 245, 222,0.7);
+}
+
+#logo {
+            height: 41px;
+            width: 40px;
+            margin: 21px 28px;
+        }
+        table tr td img{
+            height: 100px;
+            width: 100px;
+            margin-left: 22px;
+        }
+    </STyle>
+</head>
+
+<body>
+    <div id="heading">
+        <img src="android-chrome-512x512.png" alt="logo" id="logo">   
+        <ul id="homenav">
+            <li><a href="help.html" id="help">  HELP </a></li>
+            <li><a href="FEEDBACK.HTML">  FEEDBACK </a></li>
+            <li><a href="login.html"> SIGN IN</a> </li>
+        </ul>
+    </div>
+    <div id="votingcount">
+        <div id="innerdiv">
+        <table>
+            <tr>
+                <td><img src="bjp logo.png" alt="bjp logo"></td>
+                <td><img src="congress logo.png" alt="congress logo"></td>
+                <td><img src="aap logo.jpg" alt=""></td>
+                <td><img src="shiromani-akali-dal-logo.jpg" alt="other logo"></td>
+            </tr>
+            <tr>
+                <th>BJP</th>
+                <TH>CONGRESS</TH>
+                <TH>AAP</TH>
+                <TH>OTHER</TH>
+            </tr>
+            <tr>
+                <td>vote count=444</td>
+                <td>vote count=444</td>
+                <td>vote count=444</td>
+                <td>vote count=444</td>
+            </tr>
+            
+        </table>
+    </div>
+    </div>
+    <div id="lastdiv">
+        <p>TO CAST YOUR VOTE </p>
+        <a href="login.html">   <input type="button" value="SIGN IN"></a> 
+    </div>
+
+</body>
+
+</html>

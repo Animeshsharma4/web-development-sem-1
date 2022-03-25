@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK-VOTING PORTAL</title>
+    <STYle>
+        body {
+
+
+            background: url(pexels-studio-art-smile-3476860.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        #logo {
+            height: 41px;
+            width: 40px;
+            margin: 21px 28px;
+        }
+
+
+        #heading {
+
+            display: flex;
+            background: rgba(23, 240, 218, 0.35);
+            height: 62px;
+            justify-items: center;
+            align-items: center;
+            bac display: flex;
+        }
+
+        #headinglist {
+
+
+            list-style: none;
+            display: flex;
+            margin-left: 116px;
+
+        }
+
+        #headinglist li a {
+            color: yellowgreen;
+            padding: 2px 13px;
+            margin-left: 70px;
+            border: 2px dotted rgb(133, 169, 175);
+            border-radius: 3px;
+            background-color: rgb(236, 222, 222);
+
+
+        }
+
+        #headingbutton {
+            margin-left: 199px;
+
+
+
+
+        }
+
+        input,
+        textarea,
+        select {
+            background-color: rgb(168, 243, 224);
+        }
+
+        #headinglist li a:hover {
+            background-color: rgba(23, 240, 218, 0.35);
+            color: black;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            color: rgb(168, 96, 235);
+
+        }
+
+        #feedbackhead {
+            background-color: rgb(178, 209, 149);
+
+        }
+
+        #form {
+            margin-top: 30px;
+            background-color: rgba(124, 164, 238,0.8);
+        }
+
+        #form input,
+        #form textarea,#form select {
+            margin-bottom: 26px;
+            margin-left: 60px;
+            border-color: darkgoldenrod;
+        }
+        #vote{
+            padding-top: 20px;
+        }
+        #form label{
+            padding-left: 40px;
+        }
+        #lastsubmit{
+           margin-left: 560px;
+        }
+    </STYle>
+</head>
+
+<body>
+    <div id="heading">
+        <img src="android-chrome-512x512.png" alt="logo" id="logo">
+        <ul id="headinglist">
+            <li><a href="home.html" id="home">HOME</a></li>
+            <LI><a href="FEEDBACK.HTML">FEEDBACK</a></LI>
+            <LI><a href="help.html">HELP</a></LI>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div id="headingbutton">
+            <button>contact us</button>
+            <button>email</button>
+        </div>
+    </div>
+    <DIV id="feedbackhead">
+        <h1 id="feedback" class="header"> FEEDBACK</h1>
+
+        <p class="header">thank you for voting by filling this form you can help us to gather some basic information</p>
+        <hr>
+
+    </DIV>
+
+    <div id="form">
+        <div id="vote">
+            <label for="voteridno.">Voter ID Number:</label>
+            <input type="password"><br>
+            <label for="feed">this feedbox is a:</label>
+            <input type="radio" class="feedbackinput" name="as">
+            <label for="">suggestion</label>
+            <input type="radio" class="feedbackinput" name="as">
+            <label for="">compliment</label>
+            <input type="radio" class="feedbackinput" name="as">
+            <label for="">complaint</label>
+            <input type="radio" class="feedbackinput" name="as">
+            <label for="">other</label><br>
+        </div>
+        <div>
+            <label for="">other:</label>
+            <textarea name="" id="" cols="38" rows="1"></textarea>
+        </div>
+        <div>
+            <label for="">how was your experience voting:</label>
+            <input type="radio" name="ad" id="">
+            <label for="radio"   >poor</label>
+            <input type="radio" name="ad" id="">
+            <label for="radio">fair</label>
+            <input type="radio" name="ad" id="">
+            <label for="radio">good</label>
+            <input type="radio" name="ad" id="">
+            <label for="radio">excellent</label>
+        </div>
+        <div>
+            <label for="">was there any malpractices:</label>
+            <select name="" id="">
+                <option value="">---select---</option>
+                <option value="">YES</option>
+                <option value="">NO</option>
+            </select>
+        </div>
+        <div>
+            <label for="">do you want to complaint againt someone?
+            </label>
+            <select name="" id="">
+                <option value="">---select---</option>
+                <option value="">YES</option>
+                <option value="">NO</option>
+
+            </select>
+        </div>
+    
+    <label for="">additional comments:</label><br>
+    <textarea name="" id="" cols="40" rows="6"></textarea>
+    <a href="home.html"><input type="button" value="submit form" id="lastsubmit"></a>
+</div>
+</body>
+
+</html>

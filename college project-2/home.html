@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        /* body {
+            height: 100%;
+            width: 100%;
+            background-image: url(texture-990085.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Josefin Sans', sans-serif;
+        } */
+
+        body {
+
+            background-color: #252839;
+            animation: changebackground 4s infinite linear;
+        }
+
+        @keyframes changebackground {
+            0% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            49% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+
+            50% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            99% {
+                background-image: linear-gradient(rgb(9, 70, 70), rgb(160, 196, 201));
+            }
+
+            100% {
+                background-image: linear-gradient(#667eea, #764ba2);
+            }
+        }
+
+
+        #navbar {
+            display: flex;
+            background-color: rgba(129, 241, 230, 0.4);
+            margin-left: -8px;
+            width: auto;
+        }
+
+        #navlist {
+            display: flex;
+            margin-left: 487px;
+            margin-top: 20px;
+        }
+
+        #navlist li {
+            padding-left: 20px;
+
+            list-style: none;
+        }
+
+        #navlist li a {
+            padding: 4px;
+            color: rgb(67, 253, 176);
+            text-decoration: none;
+            border: 2px solid grey;
+            border-radius: 20px;
+            background-color: rgba(92, 77, 57, 0.7);
+        }
+
+        #getintouch {
+
+            font-size: 23px;
+        }
+
+        #logo {
+            height: 45px;
+            width: 80px;
+            margin-left: 34px;
+            margin-top: 7px;
+
+        }
+
+        #mainheading {
+
+            margin-left: -56px;
+            width: 930px;
+            height: 500px;
+            /* border: 2px solid wheat; */
+            background: url(triangles-1430105.png) center center/cover;
+
+
+
+            margin-top: -40px;
+
+        }
+
+        #welcome {
+            font-size: 40px;
+            padding-left: 127px;
+            padding-top: 150px;
+
+            margin-bottom: 40px;
+
+            animation-name: wordsmovement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes wordsmovement {
+            from {
+                color: rgb(176, 241, 10);
+                background-color: rgba(236, 155, 236, 0.5);
+            }
+
+            to {
+                color: rgb(48, 54, 23);
+                background-color: rgba(125, 236, 199, 0.5);
+            }
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+            animation-name: btnmove;
+            animation-duration: 0.5s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes btnmove {
+
+            25% {
+                padding-right: 12px;
+            }
+
+            50% {
+                padding-left: 0px;
+            }
+
+            75% {
+                padding-left: 12px;
+            }
+
+            100% {
+                padding-left: 0px;
+            }
+        }
+
+        #button1 {
+            border: 2px dotted rgb(92, 84, 84);
+            color: rgb(243, 247, 21);
+            border-radius: 20px;
+            padding: 6px;
+            text-decoration: none;
+            background-color: rgba(158, 65, 153, 0.3);
+            margin-top: 90px;
+        }
+
+        #button1:hover {
+            background-color: rgba(141, 128, 128, 0.7);
+            color: rgb(155, 203, 211);
+
+
+
+        }
+
+        #navlist li a:hover {
+            background-color: rgba(192, 155, 155, 0.6);
+            color: rgb(242, 245, 70);
+        }
+
+        #image {
+            position: absolute;
+            width: 454px;
+            height: 500px;
+            margin-left: 809px;
+            margin-top: -500px;
+            z-index: -1;
+
+
+        }
+
+        .logoimg {
+            height: 25px;
+            width: 25px;
+            padding-left: 5px;
+        }
+
+        #footer {
+
+            margin-left: 48%;
+            margin-top: -10px;
+        }
+
+        #footerheading {
+            margin-bottom: -1px;
+            margin-left: 37px;
+        }
+
+        #color {
+            background-color: rgb(205, 217, 228);
+            margin-top: -20px;
+            margin-left: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="elevate.jpeg" alt="image not found" id="logo">
+        <div>
+            <ul id="navlist">
+                <li><a href="registeration.html">SIGN UP</a></li>
+                <li> <a href="aditi.html"> ABOUT</a></li>
+                <LI><a href="profile.html"> PORTFOLIO</a> </LI>
+                <li><a href="help.html"> HELP </a></li>
+                <LI> <a href="login.html" id="getintouch"> GET IN TOUCH </a></LI>
+            </ul>
+        </div>
+    </div>
+    <div id="mainheading">
+        <p id="welcome"> welcome to the community and let others <br> know your potential !!</p><br>
+
+        <div id="button">
+            <a href="login.html" id="button1">GET IN TOUCH</a>
+        </div>
+    </div>
+    <img src="young-woman-3718537_1920.jpg" alt="" id="image">
+    <div id="color">
+        <div id="footer">
+            <h2 id="footerheading">join us</h2>
+            <div>
+                <img src="insta logo.png" alt="" class="logoimg">
+                <img src="twitter logo.png" alt="" class="logoimg">
+                <img src="fb logo.png" alt="" class="logoimg">
+                <img src="linkedin logo.png" alt="" class="logoimg">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

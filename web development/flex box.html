@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .flexbox{
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        #container2{
+            display: flex;
+            background-color: cadetblue;
+        
+            
+        }    
+        #container3{
+            display: flex;
+            background-color: cornsilk;
+        }
+        #container1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: burlywood;
+            
+        
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flexbox">
+        <div class="container" id="container1">home  
+
+        </div>
+        <div class="container" id="container2">
+
+        </div>
+        <div class="container" id="container3">
+
+        </div>
+</div>
+</body>
+</html>
