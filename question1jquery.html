@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv {
+            border: 2px solid black;
+            height: 20px;
+            width: 800px;
+            border-radius: 26px;
+        }
+
+        .innerdiv {
+            background-color: aquamarine;
+            height: 20px;
+            width: 30px;
+            border-radius: 26px;
+        }
+
+        #mainheading {
+            background-color: rgb(47, 148, 236);
+            height: 90px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #contestants {
+            background-color: brown;
+            margin-top: -22px;
+            height: 200px;
+            margin-left: -3px;
+            width: 700px;
+
+
+        }
+
+        #votediv {
+            background-color: rgb(234, 234, 7);
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -4px;
+            margin-top: -3px;
+            width: 547px;
+        }
+
+        #votingpolediv {
+            background-color: bisque;
+            margin-top: -24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="mainheading">
+            <h1>VOTING PORTAL</h1>
+        </div>
+        <table>
+            <td>
+                <div id="contestants">
+                    <h3>contestants</h3>
+
+                    <input type="radio" name="voteradio" id="voteA">abhay <br>
+                    <input type="radio" name="voteradio" id="voteB">atul <br>
+                    <input type="radio" name="voteradio" id="voteC">ayush <br>
+                    <input type="radio" name="voteradio" id="voteD">vishal <br>
+                    <input type="radio" name="voteradio" id="voteE">gaurav <br>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div id="votediv">
+                    <input type="button" value="vote" id="votebtn">
+                </div>
+            </td>
+        </table>
+        <div id="votingpolediv">
+            <h4>abhay</h4>
+            <div id="first" class="maindiv">
+                <div id="firstdiv" class="innerdiv"></div>
+            </div>
+            <h4>atul</h4>
+            <div id="second" class="maindiv">
+                <div id="seconddiv" class="innerdiv"></div>
+            </div>
+            <h4>ayush</h4>
+            <div id="third" class="maindiv">
+                <div id="thirddiv" class="innerdiv"></div>
+            </div>
+            <h4>vishal</h4>
+            <div id="fourth" class="maindiv">
+                <div id="fourthdiv" class="innerdiv"></div>
+            </div>
+            <h4>gaurav</h4>
+
+            <div id="fifth" class="maindiv">
+
+                <div id="fifthdiv" class="innerdiv"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#votebtn").click(function () {
+
+                if ($("#voteA").prop('checked')) {
+                    if ($("#firstdiv").width() <= "800px") {
+                        $("#firstdiv").animate({ width: "+=20" }, "fast")
+                    }}
+                   
+
+                
+
+
+            })
+        })
+        $("document").ready(function () {
+            $("#votebtn").click(function () {
+                if ($("#voteB").prop('checked')) {
+                    $("#seconddiv").animate({ width: "+=20" },'fast',function(){
+                        if (($("#seconddiv").width()) >= "800px") {
+                        $("#votebtn").prop('disabled',true);}
+                    })
+                }
+
+            })
+        })
+        $("document").ready(function () {
+            $("#votebtn").click(function () {
+                if ($("#voteC").prop('checked')) {
+                    $("#thirddiv").animate({ width: "+=20" })
+                }
+
+            })
+        })
+        $("document").ready(function () {
+            $("#votebtn").click(function () {
+                if ($("#voteD").prop('checked')) {
+                    $("#fourthdiv").animate({ width: "+=20" })
+                }
+
+            })
+        })
+        $("document").ready(function () {
+            $("#votebtn").click(function () {
+                if ($("#voteE").prop('checked')) {
+                    $("#fifthdiv").animate({ width: "+=20" }, "fast")
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>
